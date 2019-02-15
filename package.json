@@ -6,11 +6,13 @@
   "scripts": {
     "build": "parcel build src/index.ts",
     "parcel": "parcel",
-    "prepack": "yarn build"
+    "prepack": "yarn build",
+    "test": "jest"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.2.2",
+    "jest": "^24.1.0",
     "parcel-bundler": "^1.6.1",
     "typescript": "^3.3.3"
   },
