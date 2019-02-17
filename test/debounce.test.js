@@ -1,4 +1,6 @@
-const debounce = require("../src/debounce");
+const path = require('path');
+const pkgJson = require('../package.json');
+const debounce = require(path.join('..', pkgJson.main));
 
 let wait;
 
@@ -10,7 +12,7 @@ afterAll(() => {
   wait = undefined;
 });
 
-test("debounce", async () => {
+test('debounce', async () => {
   const func = jest.fn();
   const debouncedFunc = debounce(func, 1000);
 
