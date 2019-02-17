@@ -1,4 +1,7 @@
-language: nodejs
+language: node_js
 
-cript:
-  - npm run test
+nodei_js:
+  - '11'
+  - '10'
+  - '9'
+  - '8'
