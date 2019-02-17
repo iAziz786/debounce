@@ -2,12 +2,12 @@
   "name": "@iaziz786/debounce",
   "version": "0.1.0",
   "description": "",
-  "main": "./lib/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "parcel build src/index.ts",
     "parcel": "parcel",
     "prepack": "yarn build",
-    "test": "jest"
+    "test": "rm -rf dist && yarn build && jest"
   },
   "dependencies": {},
   "devDependencies": {

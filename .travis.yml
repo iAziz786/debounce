@@ -1,7 +1,4 @@
 language: nodejs
 
-before_script:
-  - npm install
-
-script:
+cript:
   - npm run test
